@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether API</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: #0B1D41;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+            margin: 50px 0px 20px 0px;
+        }
+        .content{
+            width: 100%;
+        }
+        .card{
+            cursor: pointer;
+            background-color: White;
+            color: #0B1D41;
+            width: 200px;
+            padding: 30px 30px 0px 30px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0px;
+            box-shadow: 10px 10px 10px black;
+        }
+        .card:hover{
+            transform: scale(1.1);
+            transition: all .3s;
+        }
+        .card-img{
+            width: 50px;
+            padding: 30px;
+        }
+        .card-img1{
+            width: 60px;
+            padding: 30px;
+        }
+        .card-div-para{
+            display: flex;
+            gap: 10px;
+        }
+        #displayCards{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            width: 100%;
+        }
+        @media(max-width:987px){
+            #displayCards{
+                margin: 0px;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Whether API Task</h1>
+    <div id="displayCards">
+        <div class="card">
+            <div>
+                <div class="card-div-para">
+                <p>Longitude:</p>
+                <p id="longitude"></p>
+                </div>
+                <img class="card-img" src="longitude.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <div class="card-div-para">
+                <p>Latitude:</p>
+                <p id="latitude"></p>
+                </div>
+                <img class="card-img" src="ltitude.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <div class="card-div-para">
+                <p>Elevation:</p>
+                <p id="elevation"></p>
+                </div>
+                <img class="card-img1" src="elevation.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="whetherAPI.js"></script>
+</html>
